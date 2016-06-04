@@ -86,4 +86,3 @@ feature "user adds article" do
     end
   end
 end
-

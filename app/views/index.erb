@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slacker Articles</title>
+</head>
+
+<body>
+  <ul>
+    <% @titles.each_with_index do |title, index| %>
+    <li>
+      <%= title %>
+      <a href="<%= @urls[index] %>" target="_blank"><%= @urls[index] %></a>
+      <%= @descriptions[index] %>
+    </li>
+    <% end %>
+  </ul>
+  <button><a href="/articles/new">Post a New Article</a></button>
+</body>
+</html>
